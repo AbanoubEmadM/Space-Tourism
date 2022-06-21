@@ -1,0 +1,104 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    margin-top: 25px;
+    i.fa-bars{
+        font-size: 27px;
+        display: none;
+    }
+    .nav-items{
+        backdrop-filter: blur(20px);
+        width: 50%;
+        text-align: center;    
+        ul{
+            margin: 0;
+            .fa-x{
+                float: right;
+                display: none;
+                margin: 18px;
+            }
+            li{
+                text-transform: uppercase;
+                display: inline-block;
+                margin-right: 15px;
+                padding: 30px;
+                font-size: 16px;
+                
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    &.active{
+                        border-bottom: 2px solid #fff;
+                        padding-bottom: 29px;
+                                                
+                    }
+                }
+            }
+        }
+    }
+    .logo{
+        margin-left: 50px;
+    }    
+}
+@media screen and (max-width:$mobile) {
+    nav{
+        justify-content: space-between;
+        padding: 14px;
+        .nav-items{
+            display: none;
+            ul {
+                .fa-x{
+                    display: block;
+                }
+                li{
+                    display: block;
+                    a{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        i.fa-bars{
+            display: block;
+        }    
+        .logo{
+            margin: 0;
+        }
+    
+    }
+}
+@media screen and (max-width:$labtop) {
+    nav{
+        justify-content: space-between;
+        padding: 14px;
+        .nav-items{
+            display: none;
+            ul {
+                .fa-x{
+                    display: block;
+                }
+                li{
+                    margin-bottom: 70px;
+                    display: block;
+                    a{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        i.fa-bars{
+            font-size: 30px;
+            display: block;
+        }    
+        .logo{
+            margin: 0;
+        }
+    
+    }
+}

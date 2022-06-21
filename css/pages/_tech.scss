@@ -1,0 +1,106 @@
+.tech{
+    background: url("../../assets/technology/background-technology-desktop.jpg");
+    height: 100vh;
+    @include back_img;
+    .tech-main{
+        margin-top: 80px;
+        .tech-content{
+            margin-top: 60px;
+            p.name{
+                font-size: 64px;
+                font-weight: 100;
+                color: #ddd;            
+            }
+            p.desc{
+                font-size: 21px;
+                font-weight: 300;
+                color: #ddd;
+                line-height: 35px;            
+            }
+        }
+        .pagination-numbers{
+            margin-top: 60px;
+            li{
+                border: 1px solid #ddd;
+                padding: 22px 33px;
+                list-style: none;
+                margin-bottom: 30px;
+                border-radius: 50%;
+                font-size: 22px;
+                text-align: center;
+                width:fit-content;
+                cursor: pointer;
+                &.active{
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:$mobile){
+    .tech{
+        background: url("../../assets/technology/background-technology-mobile.jpg");
+        height: fit-content;
+        @include back_img;    
+        .tech-img{
+            img{
+                width: 100%;
+            }
+        }
+        .tech-main{
+            .pagination-numbers{
+                ul{
+                    display: flex;
+                    justify-content: space-between;                
+                }
+            }
+            .tech-content{
+                p.name{
+                    font-size: 45px;
+                    font-weight: 100;
+                    color: #ddd;            
+                }
+                p.desc{
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #ddd;
+                    line-height: 35px;            
+                }    
+            }
+        }
+    }
+}
+@media screen and (max-width:$labtop){
+    .tech{
+        background: url("../../assets/technology/background-technology-mobile.jpg");
+        height: fit-content;
+        @include back_img;    
+        .tech-img{
+            img{
+                width: 100%;
+            }
+        }
+        .tech-main{
+            .pagination-numbers{
+                ul{
+                    display: flex;
+                    justify-content: space-between;                
+                }
+            }
+            .tech-content{
+                p.name{
+                    font-size: 45px;
+                    font-weight: 100;
+                    color: #ddd;            
+                }
+                p.desc{
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #ddd;
+                    line-height: 35px;            
+                }    
+            }
+        }
+    }
+}

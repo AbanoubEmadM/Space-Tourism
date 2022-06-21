@@ -1,0 +1,116 @@
+  .dest-page{
+    background: url("../../assets/destination/background-destination-desktop.jpg");
+    height: 100vh;
+    @include back_img;
+    ul{
+      margin-top: 50px;  
+      li{
+        text-transform: uppercase;
+        padding-bottom: 8px;
+        cursor: pointer;
+        &.active{
+          border-bottom: 2px solid #fff;
+        }
+      }
+    }
+    .planet-content{
+        margin-top: 80px;
+        .img-desc{
+          text-align: center;
+          p{
+            font-size: 33px;
+            font-weight: 100;
+            margin-bottom: 80px;        
+          }
+        }
+        .planet{
+          margin-top: 170px;
+          .planet-name{
+            font-size: 111px;
+            text-transform: uppercase;
+          }
+          .planet-desc{
+            font-size: 18px;
+            line-height: 35px;
+            color: #ccc;
+            line-height: 35px;
+            font-weight: 300;        
+            margin-bottom: 49px;
+
+          }
+        }
+        .distance{
+          display: flex;
+          justify-content: space-between;      
+        }
+    }
+    #planet-names{
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      float: right;
+      li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+}
+@media screen and (max-width:$mobile){
+  .dest-page{
+    background: url("../../assets/destination/background-destination-mobile.jpg");
+    height: fit-content;
+    @include back_img;
+    .planet-content{
+      .planet-img{
+        img{
+  
+          width: 100%;
+        }
+      }
+      .planet{
+        margin: 0;
+      }
+    }  
+    #planet-names{
+      position: unset;
+      margin: 0;
+      width: 100%;
+      text-align: center;  
+    }
+  
+  }
+}
+@media screen and (max-width: $tablet){
+  .dest-page{
+    background: url("../../assets/destination/background-destination-tablet.jpg");
+    height: fit-content;
+    @include back_img;
+    .planet-content{
+      .planet-img{
+        img{
+  
+          width: 100%;
+        }
+      }
+      .planet{
+        margin: 0;
+      }
+      .img-desc{
+        p{
+          margin-bottom: 75px;
+        }
+      }
+    }  
+    #planet-names{
+      position: unset;
+      margin: 0;
+      width: 100%;
+      text-align: center;  
+      li{
+        font-size: 23px;
+      }
+    }
+  
+  }
+}

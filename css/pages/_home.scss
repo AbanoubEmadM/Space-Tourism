@@ -1,0 +1,79 @@
+.home{
+    background: url("../../assets/home/background-home-desktop.jpg");
+    height: 100vh;
+    @include back_img;
+    .home-section{
+        .home-content{
+            color: #ccc;
+            text-transform: uppercase;
+            p.title{
+                font: {
+                    size:30px;
+                    weight: 100;
+                }
+            }
+            p.name{
+                color: #fff;
+                font-size: 200px;
+                font-weight: 100;            
+            }
+            p.desc{
+                line-height: 32px;
+            }
+        }    
+        .home-img{
+            margin-top: 140px;
+            .home-explore{
+                background: #fff;
+                margin-top: 50px;
+                border-radius: 50%;
+                text-transform: uppercase;
+                height: 33%;
+                width: 60%;
+                display: flex;
+                margin: 60px auto;
+                align-items: center;
+                justify-content: center;
+            }
+                p{
+                    font-size: 30px;
+                    color: #000;
+                }               
+        }
+    }
+}
+@media screen and (max-width:$mobile){
+    .home{
+        background: url("../../assets/home/background-home-mobile.jpg");
+        text-align: center;
+        height: fit-content;
+        @include back_img;
+        .home-main{
+            margin-top: 40px;
+        }
+        .home-section{
+            .home-content{
+                width: 100%;
+                p.title{
+                    font: {
+                        size:22px;
+                        weight: 100;
+                    }
+                }
+                p.name{
+                    font-size: 110px;
+                }
+                p.desc{
+                    font-size: 13px;
+                }
+    
+            }
+            .home-img{
+                width: 100%;
+                .home-explore{
+                    height: 229px;                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+nav#nav
+    div(class="logo", id="logo")
+        img(src="../assets/shared/logo.svg")
+    hr
+    i(class="fa-solid fa-bars", id="bars")
+    div(class="nav-items",id="nav-items") 
+            ul 
+                i(class="fa-solid fa-x", id="close")
+                block active
+                    li #[a(href="../html/home.html", class="active") 00 Home]   
+                    li #[a(href="../html/destination.html") 01 destination]  
+                    li #[a(href="../html/crew.html") 02 crew]  
+                    li #[a(href="../html/technology.html") 03 technology]   
+script(src="../js/nav.js") 

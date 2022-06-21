@@ -1,0 +1,14 @@
+extends home.pug
+block active
+    li #[a(href="../html/home.html") 00 Home]   
+    li #[a(href="../html/destination.html",class="active") 01 destination]  
+    li #[a(href="../html/crew.html") 02 crew]  
+    li #[a(href="../html/technology.html") 03 technology]   
+    
+block page 
+    div(class="dest-page",id="dest-page") 
+        div(class="planet container",id="planet") 
+            ul#planet-names 
+            div(class="planet-content",id="planet-content")
+    include includeJs
+    

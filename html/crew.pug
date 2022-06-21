@@ -1,0 +1,17 @@
+extends home 
+block active
+    li #[a(href="../html/home.html") 00 Home]   
+    li #[a(href="../html/destination.html") 01 destination]  
+    li #[a(href="../html/crew.html", class="active") 02 crew]  
+    li #[a(href="../html/technology.html") 03 technology]   
+block page
+    .crew-page
+        div(class='crew-content container',id='crew-content') 
+            .row
+                p.title meet your crew
+                div(class='crew-desc col-lg-6 col-md-12',id='crew-desc')
+                div(class='crew-img col-lg-6 col-md-12',id='crew-img')
+                .paginations 
+                    - for (var i = 0; i <= 3; i++)
+                        li.bullet
+    script(src="../js/crew.js") 

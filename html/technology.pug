@@ -1,0 +1,20 @@
+extends home 
+block active
+    li #[a(href="../html/home.html") 00 Home]   
+    li #[a(href="../html/destination.html") 01 destination]  
+    li #[a(href="../html/crew.html") 02 crew]  
+    li #[a(href="../html/technology.html", class="active") 03 technology]   
+block page
+    .tech 
+        .tech-main.container
+            .row
+                div(class="pagination-numbers col-md-2 col-sm-12",id='pagination-numbers') 
+                    div 
+                        ul 
+                            li.active 1
+                            li 2
+                            li 3
+
+                div(class="tech-content col-md-5 col-sm-12",id='tech-content') 
+                div(class="tech-img col-md-5 col-sm-12",id="tech-img")
+    script(src="../js/tech.js") 

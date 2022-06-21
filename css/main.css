@@ -1,0 +1,694 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Heebo', sans-serif;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 16px;
+}
+
+.home {
+  background: url("../../assets/home/background-home-desktop.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+  color: #fff;
+}
+
+.home .home-section .home-content {
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.home .home-section .home-content p.title {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.home .home-section .home-content p.name {
+  color: #fff;
+  font-size: 200px;
+  font-weight: 100;
+}
+
+.home .home-section .home-content p.desc {
+  line-height: 32px;
+}
+
+.home .home-section .home-img {
+  margin-top: 140px;
+}
+
+.home .home-section .home-img .home-explore {
+  background: #fff;
+  margin-top: 50px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  height: 33%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 60px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .home-section .home-img p {
+  font-size: 30px;
+  color: #000;
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+    background: url("../../assets/home/background-home-mobile.jpg");
+    text-align: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    color: #fff;
+  }
+  .home .home-main {
+    margin-top: 40px;
+  }
+  .home .home-section .home-content {
+    width: 100%;
+  }
+  .home .home-section .home-content p.title {
+    font-size: 22px;
+    font-weight: 100;
+  }
+  .home .home-section .home-content p.name {
+    font-size: 110px;
+  }
+  .home .home-section .home-content p.desc {
+    font-size: 13px;
+  }
+  .home .home-section .home-img {
+    width: 100%;
+  }
+  .home .home-section .home-img .home-explore {
+    height: 229px;
+  }
+}
+
+.dest-page {
+  background: url("../../assets/destination/background-destination-desktop.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+  color: #fff;
+}
+
+.dest-page ul {
+  margin-top: 50px;
+}
+
+.dest-page ul li {
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.dest-page ul li.active {
+  border-bottom: 2px solid #fff;
+}
+
+.dest-page .planet-content {
+  margin-top: 80px;
+}
+
+.dest-page .planet-content .img-desc {
+  text-align: center;
+}
+
+.dest-page .planet-content .img-desc p {
+  font-size: 33px;
+  font-weight: 100;
+  margin-bottom: 80px;
+}
+
+.dest-page .planet-content .planet {
+  margin-top: 170px;
+}
+
+.dest-page .planet-content .planet .planet-name {
+  font-size: 111px;
+  text-transform: uppercase;
+}
+
+.dest-page .planet-content .planet .planet-desc {
+  font-size: 18px;
+  line-height: 35px;
+  color: #ccc;
+  line-height: 35px;
+  font-weight: 300;
+  margin-bottom: 49px;
+}
+
+.dest-page .planet-content .distance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dest-page #planet-names {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  float: right;
+}
+
+.dest-page #planet-names li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .dest-page {
+    background: url("../../assets/destination/background-destination-mobile.jpg");
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    color: #fff;
+  }
+  .dest-page .planet-content .planet-img img {
+    width: 100%;
+  }
+  .dest-page .planet-content .planet {
+    margin: 0;
+  }
+  .dest-page #planet-names {
+    position: unset;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dest-page {
+    background: url("../../assets/destination/background-destination-tablet.jpg");
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    color: #fff;
+  }
+  .dest-page .planet-content .planet-img img {
+    width: 100%;
+  }
+  .dest-page .planet-content .planet {
+    margin: 0;
+  }
+  .dest-page .planet-content .img-desc p {
+    margin-bottom: 75px;
+  }
+  .dest-page #planet-names {
+    position: unset;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .dest-page #planet-names li {
+    font-size: 23px;
+  }
+}
+
+.crew-page {
+  background: url("../../assets/crew/background-crew-desktop.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+  color: #fff;
+}
+
+.crew-page .paginations {
+  position: absolute;
+  margin: 10px;
+  bottom: 15%;
+}
+
+.crew-page .paginations li {
+  width: 15px;
+  height: 15px;
+  background-color: #373942;
+  list-style: none;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.crew-page .paginations li.active {
+  background-color: #fff;
+}
+
+.crew-page .crew-content {
+  margin-top: 80px;
+  color: #fff;
+}
+
+.crew-page .crew-content .crew-desc {
+  margin-top: 200px;
+  width: 45%;
+  margin-right: 40px;
+}
+
+.crew-page .crew-content .crew-desc .name {
+  font-size: 63px;
+}
+
+.crew-page .crew-content .crew-desc .role {
+  font-size: 35px;
+  font-weight: 100;
+  color: #ddd;
+}
+
+.crew-page .crew-content .crew-desc .bio {
+  font-size: 20px;
+  color: #ccc;
+  font-weight: 300;
+}
+
+.crew-page .crew-content .crew-img {
+  width: 50%;
+}
+
+.crew-page .crew-content p.title {
+  font-size: 35px;
+  margin: 10;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .crew-page {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    color: #fff;
+    background: url("../../assets/crew/background-crew-mobile.jpg");
+  }
+  .crew-page .crew-content .crew-desc {
+    width: 100%;
+    margin: 0;
+  }
+  .crew-page .crew-content .crew-desc .name {
+    font-size: 30px;
+  }
+  .crew-page .crew-content .crew-desc .role {
+    font-size: 20px;
+    font-weight: 100;
+    color: #ddd;
+  }
+  .crew-page .crew-content .crew-desc .bio {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 300;
+  }
+  .crew-page .crew-content .crew-img {
+    width: 100%;
+  }
+  .crew-page .crew-content .crew-img img {
+    width: 100%;
+  }
+  .crew-page .paginations {
+    position: unset;
+    margin: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crew-page {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: url("../../assets/crew/background-crew-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    color: #fff;
+  }
+  .crew-page .crew-content .crew-desc {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .crew-page .crew-content .crew-desc .name {
+    font-size: 30px;
+  }
+  .crew-page .crew-content .crew-desc .role {
+    font-size: 47px;
+    font-weight: 100;
+    color: #ddd;
+  }
+  .crew-page .crew-content .crew-desc .bio {
+    font-size: 28px;
+    color: #ccc;
+    font-weight: 300;
+  }
+  .crew-page .crew-content .crew-img {
+    width: 100%;
+  }
+  .crew-page .crew-content .crew-img img {
+    width: 100%;
+  }
+  .crew-page .crew-content p.title {
+    font-size: 55px;
+    margin: 10;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  .crew-page .paginations {
+    position: unset;
+    margin: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .crew-page {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: url("../../assets/crew/background-crew-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    color: #fff;
+  }
+  .crew-page .crew-content .crew-desc {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .crew-page .crew-content .crew-desc .name {
+    font-size: 30px;
+  }
+  .crew-page .crew-content .crew-desc .role {
+    font-size: 47px;
+    font-weight: 100;
+    color: #ddd;
+  }
+  .crew-page .crew-content .crew-desc .bio {
+    font-size: 28px;
+    color: #ccc;
+    font-weight: 300;
+  }
+  .crew-page .crew-content .crew-img {
+    width: 100%;
+  }
+  .crew-page .crew-content .crew-img img {
+    width: 100%;
+  }
+  .crew-page .crew-content p.title {
+    font-size: 55px;
+    margin: 10;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  .crew-page .paginations {
+    position: unset;
+    margin: 15px;
+    text-align: center;
+  }
+}
+
+.tech {
+  background: url("../../assets/technology/background-technology-desktop.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+  color: #fff;
+}
+
+.tech .tech-main {
+  margin-top: 80px;
+}
+
+.tech .tech-main .tech-content {
+  margin-top: 60px;
+}
+
+.tech .tech-main .tech-content p.name {
+  font-size: 64px;
+  font-weight: 100;
+  color: #ddd;
+}
+
+.tech .tech-main .tech-content p.desc {
+  font-size: 21px;
+  font-weight: 300;
+  color: #ddd;
+  line-height: 35px;
+}
+
+.tech .tech-main .pagination-numbers {
+  margin-top: 60px;
+}
+
+.tech .tech-main .pagination-numbers li {
+  border: 1px solid #ddd;
+  padding: 22px 33px;
+  list-style: none;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.tech .tech-main .pagination-numbers li.active {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 480px) {
+  .tech {
+    background: url("../../assets/technology/background-technology-mobile.jpg");
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    color: #fff;
+  }
+  .tech .tech-img img {
+    width: 100%;
+  }
+  .tech .tech-main .pagination-numbers ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tech .tech-main .tech-content p.name {
+    font-size: 45px;
+    font-weight: 100;
+    color: #ddd;
+  }
+  .tech .tech-main .tech-content p.desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ddd;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tech {
+    background: url("../../assets/technology/background-technology-mobile.jpg");
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    color: #fff;
+  }
+  .tech .tech-img img {
+    width: 100%;
+  }
+  .tech .tech-main .pagination-numbers ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tech .tech-main .tech-content p.name {
+    font-size: 45px;
+    font-weight: 100;
+    color: #ddd;
+  }
+  .tech .tech-main .tech-content p.desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ddd;
+    line-height: 35px;
+  }
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  margin-top: 25px;
+}
+
+nav i.fa-bars {
+  font-size: 27px;
+  display: none;
+}
+
+nav .nav-items {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 50%;
+  text-align: center;
+}
+
+nav .nav-items ul {
+  margin: 0;
+}
+
+nav .nav-items ul .fa-x {
+  float: right;
+  display: none;
+  margin: 18px;
+}
+
+nav .nav-items ul li {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 15px;
+  padding: 30px;
+  font-size: 16px;
+}
+
+nav .nav-items ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .nav-items ul li a.active {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 29px;
+}
+
+nav .logo {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 14px;
+  }
+  nav .nav-items {
+    display: none;
+  }
+  nav .nav-items ul .fa-x {
+    display: block;
+  }
+  nav .nav-items ul li {
+    display: block;
+  }
+  nav .nav-items ul li a {
+    font-size: 18px;
+  }
+  nav i.fa-bars {
+    display: block;
+  }
+  nav .logo {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 14px;
+  }
+  nav .nav-items {
+    display: none;
+  }
+  nav .nav-items ul .fa-x {
+    display: block;
+  }
+  nav .nav-items ul li {
+    margin-bottom: 70px;
+    display: block;
+  }
+  nav .nav-items ul li a {
+    font-size: 25px;
+  }
+  nav i.fa-bars {
+    font-size: 30px;
+    display: block;
+  }
+  nav .logo {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
